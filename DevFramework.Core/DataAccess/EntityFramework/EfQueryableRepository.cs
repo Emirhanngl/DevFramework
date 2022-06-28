@@ -17,11 +17,11 @@ namespace DevFramework.Core.DataAccess.EntityFramework
         protected virtual IDbSet<T> Entities
         {
             get
-            { return _entities ?? (_entities = _context.Set<T>()); }// Y.S. 1
+            { return _entities ?? (_entities = _context.Set<T>()); }
         }
     }
 }
-//if (_entities == null) YS=1
+//if (_entities == null)
 //{
 //    _entities =_context.Set<T>();
 //}
